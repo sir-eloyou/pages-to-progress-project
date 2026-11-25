@@ -20,9 +20,9 @@
   --ptp-border: #E3DDD2;
   --ptp-border-hover: #CBC2B3;
 
-  /* Typography */
-  --ptp-font-serif: "Lora", Georgia, "Times New Roman", serif;
-  --ptp-font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography — Editorial & Modern UI */
+  --ptp-font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --ptp-font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Radii & Motion */
   --ptp-radius-sm: 6px;
@@ -31,7 +31,6 @@
   --ptp-radius-pill: 999px;
   --ptp-transition: 0.15s ease;
 }
-
 /* Base & Typography */
 body {
   background-color: var(--ptp-bg);
