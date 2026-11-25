@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>pages-to-progress-project</title>
+  </head>
+  <body>
+    <header class="border-bottom bg-white py-3" id="header"></header>
+    <main class="flex-grow-1">
+      <section id="quote-banner-mount" class="container my-4" aria-live="polite"></section>
+      <section id="stats-row-mount" class="container my-3" aria-label="Reading statistics"></section>
+      <section class="container my-4">
+        <div class="row g-4 align-items-start">
+          <!-- Left Column: Active Reading List -->
+          <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-8">
+            <div id="reading-list-mount"></div>
+            <div id="progress-mount"></div>
+          </div>
+
+    <div class="col-12 col-lg-4">
+      <aside id="find-books-mount" aria-label="Find a book"></aside>
+    </div>
+  </div>
+        </div>
+
+         <div id="progress-mount"></div>
+      </section>
+      
+    </main>
+
+    <template id="quote-banner-template">
+      <div class="quote-card d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 p-3 p-md-4">
+        <div class="d-flex align-items-start gap-3">
+          <i class="bi bi-quote quote-icon"></i>
+          <div>
+            <p class="mb-1 fw-semibold text-dark" style="font-size: 0.975rem;" data-quote-text>
+              “A reader lives a thousand lives before he dies.”
+            </p>
+            <p class="mb-0 text-muted" style="font-size: 0.825rem;" data-quote-meta>
+              — George R.R. Martin · Motivation boost from quotes API
+            </p>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-quote d-inline-flex align-items-center gap-2 flex-shrink-0"
+          data-new-quote-btn
+        >
+          <i class="bi bi-arrow-clockwise"></i>
+          <span>New quote</span>
+        </button>
+      </div>
+    </template>
+
+    <template id="stats-row-template">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+    <div class="col">
+      <div class="stat-card h-100">
+        <div class="stat-label">Books finished</div>
+        <div class="stat-value" data-stat="books-finished">0 / 20</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="stat-card h-100">
+        <div class="stat-label">Pages read</div>
+        <div class="stat-value" data-stat="pages-read">0</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="stat-card h-100">
+        <div class="stat-label">Remaining slots</div>
+        <div class="stat-value" data-stat="remaining-slots">20</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="stat-card h-100">
+        <div class="stat-label">Days left</div>
+        <div class="stat-value" data-stat="days-left">0</div>
+      </div>
+    </div>
+  </div>
+    </template>
+
+
+    <footer class="footer-custom py-4 mt-auto" id="footer"></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
